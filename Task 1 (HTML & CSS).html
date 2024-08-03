@@ -29,6 +29,7 @@
       body{
       background-color: var(--c-background-color);
       color: var(--base-font-color);
+      width: 800px ; 
     }
 
     header{ 
@@ -40,6 +41,7 @@
 
     footer{ 
       background-color: var(--c-background-highlights);
+      clear: both;
     }
 
     .article-links {
@@ -50,9 +52,6 @@
         color: orange;
     }
 
-    a:hover {
-      color: orange;
-    }
 
     .border{
         border-width : 3px;
@@ -67,15 +66,25 @@
     }
 
     .top-list li {
-    
-    color: white;
-    flex: 25%;
-    text-align: center;
-
+        color: white;
+        flex: 25%;
+        text-align: center;
     } 
 
+    .top-list li :hover {
+      color: orange;
+    }
+
+    article{
+        float: left;
+        width: 81% ;
+    }
+    
     aside{
        color: var(--c-green);
+       float: right;
+       width: 12% ;
+       margin-right: 6%;
     }
 
     aside a {
@@ -84,6 +93,10 @@
 
     aside a:hover {
         color: var(--c-blue)
+    }
+
+    article h2, h3 {
+        padding-top: 50px;
     }
 
     </style>
