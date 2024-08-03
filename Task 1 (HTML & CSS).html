@@ -31,7 +31,14 @@
       color: var(--base-font-color);
     }
 
-    header, footer{ 
+    header{ 
+        background-color: var(--c-background-highlights);
+        text-align: center;
+        color: var(--c-yellow) ;
+        font-size: 150% ;
+    }
+
+    footer{ 
       background-color: var(--c-background-highlights);
     }
 
@@ -53,6 +60,31 @@
         border-color: var(--c-cyan);
     }
 
+    .top-list {
+        list-style-type: none;
+        display: flex;
+        
+    }
+
+    .top-list li {
+    
+    color: white;
+    flex: 25%;
+    text-align: center;
+
+    } 
+
+    aside{
+       color: var(--c-green);
+    }
+
+    aside a {
+        color: var(--c-red)
+    }
+
+    aside a:hover {
+        color: var(--c-blue)
+    }
 
     </style>
     
@@ -67,7 +99,7 @@
     </header>
 
     <nav>
-      <ul>
+      <ul class="top-list">
         <li><a href="#">Home</a></li>
         <li><a href="#">Our team</a></li>
         <li><a href="#">Projects</a></li>
